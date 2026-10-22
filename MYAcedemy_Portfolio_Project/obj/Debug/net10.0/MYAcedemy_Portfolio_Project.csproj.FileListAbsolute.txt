@@ -232,3 +232,4 @@ C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Proj
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.genruntimeconfig.cache
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\ref\MYAcedemy_Portfolio_Project.dll
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.sourcelink.json
