@@ -1,9 +1,18 @@
+using MYAcedemy_Portfolio_Project.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+//burayı not al
+builder.Services.AddDbContext<PortfolioContext>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
