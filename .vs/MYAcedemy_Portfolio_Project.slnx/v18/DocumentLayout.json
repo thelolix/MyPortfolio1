@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\areas\\admin\\views\\shared\\components\\_adminlayoutheadcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\areas\\admin\\views\\shared\\components\\_adminlayoutheadcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\areas\\admin\\views\\message\\messagelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\areas\\admin\\views\\message\\messagelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\areas\\admin\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\areas\\admin\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\areas\\admin\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\areas\\admin\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\areas\\admin\\views\\adminlayout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\areas\\admin\\views\\adminlayout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\areas\\admin\\views\\experience\\experiencelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\areas\\admin\\views\\experience\\experiencelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,88 +14,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Shared\\Components\\_AdminLayoutHeadComponentPartial\\Default.cshtml",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Shared\\Components\\_AdminLayoutHeadComponentPartial\\Default.cshtml",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Shared\\Components\\_AdminLayoutHeadComponentPartial\\Default.cshtml",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Shared\\Components\\_AdminLayoutHeadComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-30T19:03:31.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MessageList.cshtml",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Message\\MessageList.cshtml",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Message\\MessageList.cshtml",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Message\\MessageList.cshtml",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Message\\MessageList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-30T18:07:39.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MessageController.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\MessageController.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\MessageController.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\MessageController.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\MessageController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T18:03:07.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ExperienceList.cshtml",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Experience\\ExperienceList.cshtml",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Experience\\ExperienceList.cshtml",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Experience\\ExperienceList.cshtml",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\Experience\\ExperienceList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-29T15:02:44.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ExperienceController.cs",
               "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
               "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
               "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
               "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T14:49:40.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\AdminLayout\\Index.cshtml",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\AdminLayout\\Index.cshtml",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\AdminLayout\\Index.cshtml",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Views\\AdminLayout\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-29T14:39:29.379Z",
+              "WhenOpened": "2026-11-03T20:16:28.398Z",
               "EditorCaption": ""
             }
           ]

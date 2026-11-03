@@ -35,8 +35,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5MYXlvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Experience/CreateExperience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXhwZXJpZW5jZVxDcmVhdGVFeHBlcmllbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Experience/ExperienceList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXhwZXJpZW5jZVxFeHBlcmllbmNlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Experience/UpdateExperience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXhwZXJpZW5jZVxVcGRhdGVFeHBlcmllbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Message/CreateMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxDcmVhdGVNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Message/MessageList.cshtml]
@@ -61,6 +73,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Shared/Components/_AminLayoutSidebarComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FtaW5MYXlvdXRTaWRlYmFyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Default/Index.cshtml]
