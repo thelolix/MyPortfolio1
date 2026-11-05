@@ -2,7 +2,7 @@
 
 namespace MYAcedemy_Portfolio_Project.ViewComponents.DefaultViewComponents
 {
-    public class _DefaultNavBarComponentPartial : ViewComponent
+    public class _DefaultNavbarComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

@@ -150,6 +150,7 @@ C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Proj
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.RazorAssemblyInfo.cache
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.RazorAssemblyInfo.cs
+C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.sourcelink.json
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -225,11 +226,10 @@ C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Proj
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedem.48B23807.Up2Date
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.dll
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\refint\MYAcedemy_Portfolio_Project.dll
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.pdb
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.genruntimeconfig.cache
 C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\ref\MYAcedemy_Portfolio_Project.dll
-C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-C:\Users\musta\source\repos\MYAcedemy_Portfolio_Project\MYAcedemy_Portfolio_Project\obj\Debug\net10.0\MYAcedemy_Portfolio_Project.sourcelink.json

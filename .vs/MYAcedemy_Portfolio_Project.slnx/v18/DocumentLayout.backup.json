@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Migrations\\20261105183715_mig3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MYAcedemy_Portfolio_Project\\Migrations\\20261105183715_mig3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\context\\portfoliocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\context\\portfoliocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\views\\shared\\components\\_defaultheadcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\views\\shared\\components\\_defaultheadcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Migrations\\20261105183422_mig3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MYAcedemy_Portfolio_Project\\Migrations\\20261105183422_mig3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\entites\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\entites\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\entites\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\entites\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\viewcomponents\\defaultviewcomponents\\_defaultnavbarcomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\viewcomponents\\defaultviewcomponents\\_defaultnavbarcomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\viewcomponents\\defaultviewcomponents\\_defaultherosectioncopmonentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\viewcomponents\\defaultviewcomponents\\_defaultherosectioncopmonentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\views\\shared\\components\\_defaultherocomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\views\\shared\\components\\_defaultherocomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\views\\shared\\components\\_defaultherosectioncopmonentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\views\\shared\\components\\_defaultherosectioncopmonentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,118 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20261105183715_mig3.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Migrations\\20261105183715_mig3.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Migrations\\20261105183715_mig3.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Migrations\\20261105183715_mig3.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Migrations\\20261105183715_mig3.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T18:37:15.965Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-05T21:06:07.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PortfolioContext.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Context\\PortfolioContext.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Context\\PortfolioContext.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Context\\PortfolioContext.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Context\\PortfolioContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T18:35:24.202Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeadComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-05T21:06:04.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20261105183422_mig3.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Migrations\\20261105183422_mig3.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Migrations\\20261105183422_mig3.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Migrations\\20261105183422_mig3.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Migrations\\20261105183422_mig3.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T18:34:22.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Project.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Entites\\Project.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Entites\\Project.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Entites\\Project.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Entites\\Project.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T18:28:01.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Entites\\Category.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Entites\\Category.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Entites\\Category.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Entites\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T18:26:10.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroComponentPartial\\Default.cshtml",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroComponentPartial\\Default.cshtml",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroComponentPartial\\Default.cshtml",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroSectionCopmonentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroSectionCopmonentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroSectionCopmonentPartial\\Default.cshtml",
+              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Views\\Shared\\Components\\_DefaultHeroSectionCopmonentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-05T18:12:44.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-05T17:57:30.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_DefaultHeroSectionCopmonentPartial.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultHeroSectionCopmonentPartial.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultHeroSectionCopmonentPartial.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultHeroSectionCopmonentPartial.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultHeroSectionCopmonentPartial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T17:47:55.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_DefaultNavBarComponentPartial.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultNavBarComponentPartial.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultNavBarComponentPartial.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultNavBarComponentPartial.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\ViewComponents\\DefaultViewComponents\\_DefaultNavBarComponentPartial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-05T17:39:41.696Z",
+              "WhenOpened": "2026-11-05T21:04:20.758Z",
               "EditorCaption": ""
             }
           ]
