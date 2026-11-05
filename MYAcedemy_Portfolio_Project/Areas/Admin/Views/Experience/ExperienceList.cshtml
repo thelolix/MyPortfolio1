@@ -17,21 +17,25 @@
             <th>Alt Başlık</th>
             <th>Süre / Zaman</th>
             <th>Çalışma Türü</th>
+            <th>Aktif Mi?</th>
             <th>Sil</th>
             <th>Güncelle</th>
         </tr>
         @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.ExperienceID</td>
-                <td>@item.ExperienceTitle</td>
-                <td>@item.SideTitle</td>
-                <td>@item.Duration</td>
-                <td>@item.IsActive</td>
-                <td><a href="/Admin/Experience/DeleteExperience/@item.ExperienceID" class="btn btn-danger">Sil</a></td>
-                <td><a href="/Admin/Experience/UpdateExperience/@item.ExperienceID" class="btn btn-success">Güncelle</a></td>
-                <td>Güncelle</td>
-            </tr>
+        
+        {<tr>
+            <td>@item.ExperienceID</td>
+            <td>@item.ExperienceTitle</td>
+            <td>@item.CompanyName</td>
+            <td>@item.Description</td>
+            <td>@item.SideTitle</td>
+            <td>@item.Duration</td>
+            <td>@item.WorkType</td>
+            <td>@item.IsActive</td>
+            <td><a href="/Admin/Experience/DeleteExperience/@item.ExperienceID" class="btn btn-danger btn-sm">Sil</a></td>
+            <td><a href="/Admin/Experience/UpdateExperience/@item.ExperienceID" class="btn btn-success btn-sm">Güncelle</a></td>
+        </tr>
         }
     </table>
+    <a href="/Admin/Experience/CreateExperience" class="btn btn-primary">Yeni Deneyim Ekle</a>
 </div>

@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|c:\\users\\musta\\source\\repos\\myacedemy_portfolio_project\\myacedemy_portfolio_project\\areas\\admin\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C8F14EE-E6DA-8200-9A3C-801C502B6BFC}|MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project.csproj|solutionrelative:myacedemy_portfolio_project\\areas\\admin\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExperienceController.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
-              "RelativeDocumentMoniker": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
-              "ToolTip": "C:\\Users\\musta\\source\\repos\\MYAcedemy_Portfolio_Project\\MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
-              "RelativeToolTip": "MYAcedemy_Portfolio_Project\\Areas\\Admin\\Controllers\\ExperienceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T20:16:28.398Z",
-              "EditorCaption": ""
             }
           ]
         }

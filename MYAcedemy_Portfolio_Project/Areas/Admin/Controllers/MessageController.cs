@@ -14,6 +14,8 @@ namespace MYAcedemy_Portfolio_Project.Areas.Admin.Controllers
             _context = context;
         }
 
+
+
         public IActionResult MessageList()
         {
             var value = _context.Messages.ToList();
@@ -41,6 +43,17 @@ namespace MYAcedemy_Portfolio_Project.Areas.Admin.Controllers
             _context.Messages.Remove(values);
             _context.SaveChanges();
             return RedirectToAction("MessageList");
+        }
+
+        
+
+
+        [HttpGet]
+        public IActionResult MessageDetail(int id)
+        {
+            var values = _context.Messages.Find(id);
+            return View(values);
+            
         }
 
     }

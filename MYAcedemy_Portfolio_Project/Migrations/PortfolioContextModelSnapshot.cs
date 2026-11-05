@@ -63,6 +63,23 @@ namespace MYAcedemy_Portfolio_Project.Migrations
                     b.ToTable("Abouts");
                 });
 
+            modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Category", b =>
+                {
+                    b.Property<int>("CategoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryID"));
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CategoryID");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Contact", b =>
                 {
                     b.Property<int>("ContactID")
@@ -231,6 +248,56 @@ namespace MYAcedemy_Portfolio_Project.Migrations
                     b.HasKey("MessageID");
 
                     b.ToTable("Messages");
+                });
+
+            modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Project", b =>
+                {
+                    b.Property<int>("ProjectID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProjectID"));
+
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CoverImageurl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GitHubUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ProjectID");
+
+                    b.HasIndex("CategoryID");
+
+                    b.ToTable("Projects");
+                });
+
+            modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Project", b =>
+                {
+                    b.HasOne("MYAcedemy_Portfolio_Project.Entites.Category", "Category")
+                        .WithMany("Projects")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Category", b =>
+                {
+                    b.Navigation("Projects");
                 });
 #pragma warning restore 612, 618
         }
