@@ -1,0 +1,29 @@
+﻿@model List<MYAcedemy_Portfolio_Project.Entites.Category>
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+    int sayac = 0;
+}
+<div class="container">
+    <br />
+    <h3>Proje Kategorileri</h3>
+    <br />
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>#</th>
+            <th>Kategori Adı</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            sayac++;
+            <tr>
+                <td>@sayac</td>
+                <td>@item.CategoryName</td>
+                <td><a href="/Admin/Category/UpdateCategory/@item.CategoryID" class="btn btn-success btn-sm">Güncelle</a></td>
+                <td><a href="/Admin/Category/DeleteCategory/@item.CategoryID" class="btn btn-danger btn-sm">Sil</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Admin/Category/CreateCategory" class="btn btn-primary">Yeni Kategori Ekle</a>
+</div>

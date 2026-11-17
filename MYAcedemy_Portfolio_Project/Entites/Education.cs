@@ -9,6 +9,7 @@
         public string Description { get; set; }
 
         public string Duration { get; set; }
+        public bool IsActive { get; set; }
 
     }
 }

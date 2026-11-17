@@ -31,25 +31,25 @@
                         Benimle İletişime Geç
                     </a>
                 </div>
+                
 
+
+               
+                    
+               
                 <!-- Social Links -->
                 <div class="d-flex align-items-center gap-2 pt-2">
                     <span class="text-secondary small fw-medium me-2">Bağlantılar:</span>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profilim">
-                        <i class="bi bi-github"></i>
+                    @foreach (var item in (List<MYAcedemy_Portfolio_Project.Entites.SocialMedia>)ViewBag.SocialMedia)
+                    {
+                    <a href="@item.SocialMediaUrl" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="@item.SocialMediaName">
+                        <i class="@item.SocialMediaIcon"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profilim">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Medium Yazılarım">
-                        <i class="bi bi-medium"></i>
-                    </a>
-                    <a href="mailto:poyraz.alsever@example.com" class="social-btn" aria-label="E-posta Gönder">
-                        <i class="bi bi-envelope"></i>
-                    </a>
+                    }
                 </div>
+                
             </div>
-
+            
             <!-- Right Visual with Portrait & Floating Badges -->
             <div class="col-lg-5 reveal-on-scroll">
                 <div class="hero-image-wrapper">
@@ -66,7 +66,7 @@
 
                     <!-- Main Portrait -->
                     <div class="hero-image-frame">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM90nUmg17t1Rwdmp5syF7ybvObe2JCYXCRhb5SArxTW6Sb07gLuO9S-IukznIPZpOgF_fkiwKlbUQnj_f_Qyk9Cmk_hywN6N9uedVOLDslZjFUZly-H53T2h4pPYZCUpldpE8o6MEl4etmOYmOq5ewjDdvQPXDBaWoOMtjP7nTgIo_fnx7HSMO6foinZwMEJijjWucA0ZsTXsXk3pAMJF1xO7JuEpTrM4SqQNXksN3rtMwEh-HmVJ" alt="Poyraz Alsever - Bilgisayar Mühendisi" loading="lazy">
+                        <img src="@ViewBag.v4" alt="Mustafa Talha Yılmaz - Yönetim Bilişim Sistemleri" loading="lazy">
                     </div>
 
                     <!-- Floating badge bottom right -->

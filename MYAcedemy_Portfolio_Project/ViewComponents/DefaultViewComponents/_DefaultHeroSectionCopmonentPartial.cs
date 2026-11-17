@@ -18,7 +18,13 @@ namespace MYAcedemy_Portfolio_Project.ViewComponents.DefaultViewComponents
             ViewBag.v2 = values.SubTitle;
             ViewBag.v3 = values.Description;
             ViewBag.v4 = values.ImageUrl;
+            ViewBag.SocialMedia = _context.SocialMedias.ToList();
+
             return View();
         }
+    
+        
+    
+    
     }
 }

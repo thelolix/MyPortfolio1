@@ -133,6 +133,9 @@ namespace MYAcedemy_Portfolio_Project.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ScoolTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -282,6 +285,51 @@ namespace MYAcedemy_Portfolio_Project.Migrations
                     b.HasIndex("CategoryID");
 
                     b.ToTable("Projects");
+                });
+
+            modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Skill", b =>
+                {
+                    b.Property<int>("SkillID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillID"));
+
+                    b.Property<int>("SkillYüzde")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SkillID");
+
+                    b.ToTable("Skills");
+                });
+
+            modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.SocialMedia", b =>
+                {
+                    b.Property<int>("SocialMediaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SocialMediaID"));
+
+                    b.Property<string>("SocialMediaIcon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SocialMediaName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SocialMediaUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SocialMediaID");
+
+                    b.ToTable("SocialMedias");
                 });
 
             modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Project", b =>

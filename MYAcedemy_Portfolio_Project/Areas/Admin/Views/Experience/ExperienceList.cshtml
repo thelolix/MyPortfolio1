@@ -6,6 +6,9 @@
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+@{
+    int sayac = 0;
+}
 <div class="container">
     <br />
     <table class="table table-bordered">
@@ -17,21 +20,33 @@
             <th>Alt Başlık</th>
             <th>Süre / Zaman</th>
             <th>Çalışma Türü</th>
-            <th>Aktif Mi?</th>
+            <th>Durumu</th>
             <th>Sil</th>
             <th>Güncelle</th>
         </tr>
         @foreach (var item in Model)
-        
-        {<tr>
-            <td>@item.ExperienceID</td>
+           
+
+        {
+            sayac++;
+            <tr>
+            <td>@sayac</td>
             <td>@item.ExperienceTitle</td>
             <td>@item.CompanyName</td>
             <td>@item.Description</td>
             <td>@item.SideTitle</td>
             <td>@item.Duration</td>
             <td>@item.WorkType</td>
-            <td>@item.IsActive</td>
+                <td>@if (item.IsActive ==true)
+                {
+                        <Span class="bbadge bg-primary px-3 py-2">Aktif</Span>
+                }
+            
+            @if (item.IsActive == false)
+                {
+                        <a class=" badge bg-secondary px-3 py-2 ">Pasif</a>
+                }
+                </td>
             <td><a href="/Admin/Experience/DeleteExperience/@item.ExperienceID" class="btn btn-danger btn-sm">Sil</a></td>
             <td><a href="/Admin/Experience/UpdateExperience/@item.ExperienceID" class="btn btn-success btn-sm">Güncelle</a></td>
         </tr>

@@ -1,6 +1,12 @@
-﻿namespace MYAcedemy_Portfolio_Project.ViewComponents.DefaultViewComponents
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace MYAcedemy_Portfolio_Project.ViewComponents.DefaultViewComponents
 {
-    public class _DefaultAboutComponentPartial
+    public class _DefaultAboutComponentPartial : ViewComponent
     {
+        public IViewComponentResult Invoke()
+        {
+            return View();
+        }
     }
 }

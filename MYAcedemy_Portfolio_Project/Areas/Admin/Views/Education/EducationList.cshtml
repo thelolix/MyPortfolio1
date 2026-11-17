@@ -1,0 +1,53 @@
+﻿@model List<MYAcedemy_Portfolio_Project.Entites.Education>
+
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+@{
+    int  sayac = 0;
+}
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Okul</th>
+        <th>Alt Başlık</th>
+        <th>Acıklama</th>
+        <th>Yıl</th>
+        <th>Durum</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            sayac = sayac + 1;
+            <tr>
+                <td>@sayac</td>
+                <td>@item.ScoolTitle</td>
+                <td>@item.SubTitle</td>
+                <td>@item.Description</td>
+                <td>@item.Duration</td>
+                <td>
+                    @if (item.IsActive == true)
+                    {
+                        <a class="btn btn-primary">Aktif</a>
+                    }
+                    @if (item.IsActive == false)
+                    {
+                        <a class="btn btn-danger">Pasif</a>
+                    }
+                </td>
+                <td>
+
+                    <a href="/Admin/Education/UpdateEducation/@item.EducationID" class="btn btn-success btn-sm">Güncelle</a>
+                </td>
+                <td>
+
+                    <a href="/Admin/Education/DeleteEducation/@item.EducationID" class="btn btn-danger btn-sm">Sil</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Admin/Education/CreateEducation/" class="btn btn-primary">Egitim Ekle</a>

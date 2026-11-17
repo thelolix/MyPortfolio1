@@ -1,0 +1,44 @@
+﻿@model List<MYAcedemy_Portfolio_Project.Entites.SocialMedia>
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+@{
+    int sayac = 0;
+}
+<div class="container">
+    <br />
+
+    <h3>Sosyal Medya Listesi</h3>
+    <br />
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>#</th>
+            <th>İkon</th>
+            <th>Sosyal Medya Adı</th>
+            <th>URL / Link</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                sayac = sayac + 1;
+                <tr>
+                    <td>@sayac</td>
+                    <td>@item.SocialMediaIcon
+                    </td>
+                    <td>@item.SocialMediaName</td>
+                    <td>@item.SocialMediaUrl</td>
+                    <td>
+                        <a href="/Admin/SocialMedia/SocialMediaUpdate/@item.SocialMediaID" class="btn btn-success btn-sm">Güncelle</a>
+                    </td>
+                    <td>
+                        <a href="/Admin/SocialMedia/SocialMediaDelete/@item.SocialMediaID" class="btn btn-danger btn-sm">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Admin/SocialMedia/SocialMediaCreate" class="btn btn-primary">Yeni Sosyal Medya Ekle</a>
+</div>

@@ -1,0 +1,47 @@
+﻿@model List<MYAcedemy_Portfolio_Project.Entites.Skill>
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+@{
+    int sayac = 0;
+}
+
+<div class="container">
+    <br />
+
+    <h3>Yetenek Listesi</h3>
+    <br />
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>#</th>
+            <th>Yetenek</th>
+            <th>Yetenek Yüzdesi</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                sayac = sayac + 1;
+                <tr>
+                    <td>@sayac</td>
+                    <td>@item.Title</td>
+                    <td>@item.SkillYüzde</td>
+
+                    <td>
+
+                        <a href="/Admin/Skills/SkillUpdate/@item.SkillID" class="btn btn-success btn-sm">Güncelle</a>
+                    </td>
+                    <td>
+
+                        <a href="/Admin/Skills/SkillDelete/@item.SkillID" class="btn btn-danger btn-sm">Sil</a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Admin/Skills/SkillCreate" class="btn btn-primary">Yeni Yetenek Ekle</a>
+
+</div>

@@ -1,0 +1,254 @@
+﻿@model MYAcedemy_Portfolio_Project.Entites.About
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+@section Styles {
+    <style>
+        .form-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .form-card-header {
+            padding: 20px 26px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .form-card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--pastel-purple);
+            color: var(--primary-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .form-card-body {
+            padding: 26px;
+        }
+
+        .form-card-footer {
+            padding: 16px 26px;
+            border-top: 1px solid var(--border-color);
+            background: #FAFBFE;
+            border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .form-label {
+            font-size: 0.83rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+            .form-label .req {
+                color: #c0342b;
+            }
+
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #DCE1ED;
+            padding: 9px 13px;
+            font-size: 0.88rem;
+        }
+
+        .input-icon-wrap {
+            position: relative;
+        }
+
+            .input-icon-wrap i {
+                position: absolute;
+                left: 13px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--text-secondary);
+                pointer-events: none;
+            }
+
+            .input-icon-wrap .form-control {
+                padding-left: 38px;
+            }
+
+        .btn-accent {
+            background: var(--primary-accent);
+            border: 1px solid var(--primary-accent);
+            color: #fff;
+            border-radius: 12px;
+            font-weight: 600;
+            padding: 9px 20px;
+            box-shadow: 0 4px 12px rgba(130, 118, 217, 0.25);
+        }
+
+            .btn-accent:hover {
+                background: var(--primary-accent-hover);
+                color: #fff;
+            }
+
+        .btn-soft {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 12px;
+            font-weight: 500;
+            padding: 9px 18px;
+        }
+
+            .btn-soft:hover {
+                background: #F8F9FD;
+                color: var(--primary-accent);
+            }
+
+        .info-card {
+            background: linear-gradient(145deg, #3C446B, #59658D);
+            border-radius: var(--radius-lg);
+            padding: 22px;
+            color: #DCE2F5;
+        }
+
+            .info-card h6 {
+                color: #fff;
+                font-weight: 700;
+            }
+
+        .info-item {
+            display: flex;
+            gap: 10px;
+            font-size: 0.82rem;
+            margin-top: 14px;
+            line-height: 1.45;
+        }
+
+            .info-item i {
+                color: #A294F9;
+                font-size: 1rem;
+            }
+    </style>
+}
+
+<div class="row g-4">
+    <!-- FORM -->
+    <div class="col-lg-8">
+        <div class="form-card">
+            <form asp-area="Admin" asp-action="AboutUpdate" method="post">
+
+               
+                <input type="hidden" asp-for="AboutID" />
+
+                <div class="form-card-header">
+                    <div class="form-card-icon"><i class="bi bi-pencil-square"></i></div>
+                    <div>
+                        <h5 class="mb-0 fw-bold">Hakkımda Bilgisini Güncelle</h5>
+                        <small class="text-secondary">Mevcut hakkımda alanını buradan güncelleyin.</small>
+                    </div>
+                </div>
+
+                <div class="form-card-body">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger py-2"></div>
+
+                    <div class="row g-4">
+                        <!-- Ad Soyad -->
+                        <div class="col-md-6">
+                            <label asp-for="NameSurname" class="form-label">Ad Soyad <span class="req">*</span></label>
+                            <div class="input-icon-wrap">
+                                <i class="bi bi-person"></i>
+                                <input asp-for="NameSurname" class="form-control" placeholder="Örn: Mustafa Talha  Yılmaz" required />
+                            </div>
+                            <span asp-validation-for="NameSurname"></span>
+                        </div>
+
+                        <!-- Unvan -->
+                        <div class="col-md-6">
+                            <label asp-for="JobTitle" class="form-label">Unvan <span class="req">*</span></label>
+                            <div class="input-icon-wrap">
+                                <i class="bi bi-briefcase"></i>
+                                <input asp-for="JobTitle" class="form-control" placeholder="Örn: Software Developer" required />
+                            </div>
+                            <span asp-validation-for="JobTitle"></span>
+                        </div>
+
+                        <!-- Lokasyon -->
+                        <div class="col-md-6">
+                            <label asp-for="Location" class="form-label">Lokasyon <span class="req">*</span></label>
+                            <div class="input-icon-wrap">
+                                <i class="bi bi-geo-alt"></i>
+                                <input asp-for="Location" class="form-control" placeholder="Örn: İstanbul, Türkiye" required />
+                            </div>
+                            <span asp-validation-for="Location"></span>
+                        </div>
+
+                        <!-- Uzmanlık -->
+                        <div class="col-md-6">
+                            <label asp-for="Expert" class="form-label">Uzmanlık <span class="req">*</span></label>
+                            <div class="input-icon-wrap">
+                                <i class="bi bi-code-slash"></i>
+                                <input asp-for="Expert" class="form-control" placeholder="Örn: .NET Core, MVC" required />
+                            </div>
+                            <span asp-validation-for="Expert"></span>
+                        </div>
+
+                        <!-- E-posta -->
+                        <div class="col-md-6">
+                            <label asp-for="Email" class="form-label">E-posta <span class="req">*</span></label>
+                            <div class="input-icon-wrap">
+                                <i class="bi bi-envelope"></i>
+                                <input asp-for="Email" type="email" class="form-control" placeholder="ornek@mail.com" required />
+                            </div>
+                            <span asp-validation-for="Email"></span>
+                        </div>
+
+                        <!-- Çalışma Durumu -->
+                        <div class="col-md-6">
+                            <label asp-for="OpenToWork" class="form-label">Çalışma Durumu</label>
+                            <div class="input-icon-wrap">
+                                <i class="bi bi-check-circle"></i>
+                                <input asp-for="OpenToWork" class="form-control" placeholder="Örn: Freelance / Full-time" />
+                            </div>
+                            <span asp-validation-for="OpenToWork"></span>
+                        </div>
+
+                        <!-- Açıklama -->
+                        <div class="col-12">
+                            <label asp-for="Description" class="form-label">Açıklama <span class="req">*</span></label>
+                            <textarea asp-for="Description" class="form-control" rows="5" placeholder="Kendinizden bahsedin..." required></textarea>
+                            <span asp-validation-for="Description"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card-footer">
+                    <a asp-area="Admin" asp-action="AboutList" class="btn btn-soft">
+                        <i class="bi bi-arrow-left me-1"></i> Vazgeç
+                    </a>
+                    <button type="submit" class="btn btn-accent">
+                        <i class="bi bi-check-lg me-1"></i> Değişiklikleri Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- BİLGİ KARTI -->
+    <div class="col-lg-4">
+        <div class="info-card">
+            <h6 class="mb-1"><i class="bi bi-info-circle me-1"></i> Bilgilendirme</h6>
+            <small class="text-white-50">Güncellediğiniz bilgiler anında ana sayfaya yansır.</small>
+
+            <div class="info-item">
+                <i class="bi bi-shield-check"></i>
+                <span>Gizli ID input'u sayesinde yaptığınız değişiklikler doğrudan ilgili kaydın üzerine yazılır.</span>
+            </div>
+        </div>
+    </div>
+</div>

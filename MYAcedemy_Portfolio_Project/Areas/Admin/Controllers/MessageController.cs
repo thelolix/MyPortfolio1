@@ -18,7 +18,7 @@ namespace MYAcedemy_Portfolio_Project.Areas.Admin.Controllers
 
         public IActionResult MessageList()
         {
-            var value = _context.Messages.ToList();
+            var value = _context.Messages.OrderByDescending(x => x.SendDate).ToList();
             return View(value);
         }
 
@@ -54,6 +54,27 @@ namespace MYAcedemy_Portfolio_Project.Areas.Admin.Controllers
             var values = _context.Messages.Find(id);
             return View(values);
             
+        }
+
+
+
+        [HttpPost]
+        public IActionResult SendMessage(Message message)
+        {
+            if (ModelState.IsValid)
+            {
+                message.SendDate = DateTime.Now;
+                message.IsRead = false;
+
+                _context.Messages.Add(message);
+                _context.SaveChanges();
+
+                TempData["SuccessMessage"] = "Mesajınız başarıyla iletildi! Teşekkür ederiz.";
+                return RedirectToAction("");
+            }
+
+            TempData["ErrorMessage"] = "Lütfen formu eksiksiz doldurun.";
+            return RedirectToAction("Index", "Default");
         }
 
     }

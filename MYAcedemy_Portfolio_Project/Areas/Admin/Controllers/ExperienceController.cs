@@ -16,7 +16,9 @@ namespace MYAcedemy_Portfolio_Project.Areas.Admin.Controllers
 
         public IActionResult ExperienceList()
         {
-            var value = _context.Experiences.ToList();
+
+            var value = _context.Experiences.OrderByDescending(x => x.Duration).ToList();
+
             return View(value);
         }
 

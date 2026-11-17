@@ -1,0 +1,29 @@
+﻿@model MYAcedemy_Portfolio_Project.Entites.SocialMedia
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br />
+    <h3>Sosyal Medya Güncelle</h3>
+    <br />
+
+    <form method="post">
+        <!-- Hangi kaydın güncelleneceğini belirten gizli ID alanı -->
+        <input type="hidden" asp-for="SocialMediaID" />
+
+        <label>Sosyal Medya Adı</label>
+        <input type="text" asp-for="SocialMediaName" class="form-control" />
+        <br />
+
+        <label>URL / Link</label>
+        <input type="text" asp-for="SocialMediaUrl" class="form-control" />
+        <br />
+
+        <label>İkon (Örn: bi bi-github)</label>
+        <input type="text" asp-for="SocialMediaIcon" class="form-control" />
+        <br />
+
+        <button class="btn btn-success">Değişiklikleri Kaydet</button>
+    </form>
+</div>

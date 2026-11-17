@@ -25,6 +25,8 @@ namespace MYAcedemy_Portfolio_Project.Context
         public DbSet<HeroSection> HeroSections { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<SocialMedia> SocialMedias { get; set; }
 
 
     }

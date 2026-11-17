@@ -1,0 +1,17 @@
+﻿@model MYAcedemy_Portfolio_Project.Entites.Category
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br />
+    <h3>Kategori Güncelle</h3>
+    <br />
+    <form method="post">
+        <input type="hidden" asp-for="CategoryID" />
+        <label>Kategori Adı</label>
+        <input type="text" asp-for="CategoryName" class="form-control" required />
+        <br />
+        <button class="btn btn-success">Güncelle</button>
+    </form>
+</div>

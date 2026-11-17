@@ -1,0 +1,26 @@
+﻿@model MYAcedemy_Portfolio_Project.Entites.SocialMedia
+@{
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container">
+    <br />
+    <h3>Yeni Sosyal Medya Ekle</h3>
+    <br />
+
+    <form method="post">
+        <label>Sosyal Medya Adı</label>
+        <input type="text" asp-for="SocialMediaName" class="form-control" />
+        <br />
+
+        <label>URL / Link</label>
+        <input type="text" asp-for="SocialMediaUrl" class="form-control" />
+        <br />
+
+        <label>İkon (Örn: bi bi-github)</label>
+        <input type="text" asp-for="SocialMediaIcon" class="form-control" />
+        <br />
+
+        <button class="btn btn-primary">Sosyal Medyayı Kaydet</button>
+    </form>
+</div>
