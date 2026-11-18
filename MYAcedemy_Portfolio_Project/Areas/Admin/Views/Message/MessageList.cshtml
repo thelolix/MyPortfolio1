@@ -1,36 +1,144 @@
 ﻿@model List<MYAcedemy_Portfolio_Project.Entites.Message>
+
 @{
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
 }
 
-
 <div class="container">
     <br />
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Gelen Mesajlar Listesi</h2>
+        <span class="badge bg-danger rounded-pill px-3 py-2 fs-6">
+            Okunmamış Mesaj: <strong>@ViewBag.UnreadCount</strong>
+        </span>
+    </div>
+
+    <!-- ARAMA KUTUSU -->
+    <form method="get" action="/Admin/Message/MessageList" class="mb-3">
+        <input type="text"
+               name="search"
+               class="form-control"
+               placeholder="İsme veya Konuya göre ara..." />
+        <button type="submit" class="btn btn-primary mt-2">Ara</button>
+        <a href="/Admin/Message/MessageList" class="btn btn-secondary mt-2">Temizle</a>
+    </form>
+
     <table class="table table-bordered table-hover">
-        <tr>
-            <th>#</th>
-            <th>Gönderici</th>
-            <th>Email</th>
-            <th>Konu</th>
-            <th>Tarih</th>
-            <th>Mesajı Aç</th>
-            <th>Sil</th>
-        </tr>
-        @foreach (var item in Model)
-        {
+        <thead>
             <tr>
-                <td>@item.MessageID</td>
-                <td>@item.NameSurname</td>
-                <td>@item.Email</td>
-                <td>@item.Subject</td>
-                <td>@item.SendDate.ToString("dd/MM/yyyy")</td>
-                <td><a href="/Admin/Message/MessageDetail/@item.MessageID" class="btn btn-primary">Mesajı Görüntüle</a></td>
-                <td><a href="/Admin/Message/DeleteMessage/@item.MessageID" class="btn btn-danger">Mesajı Sil</a></td>
-                
+                <th>#</th>
+                <th>Gönderici</th>
+                <th>Email</th>
+                <th>Konu</th>
+                <th>Tarih</th>
+                <th>Durumu</th>
+                <th>Detay</th>
+                <th>Sil</th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MessageID</td>
+                    <td>@item.NameSurname</td>
+                    <td>@item.Email</td>
+                    <td>@item.Subject</td>
+                    <td>@item.SendDate.ToString("dd/MM/yyyy")</td>
 
+                    <td>
+                        @if (item.IsRead == true)
+                        {
+                            <a href="/Admin/Message/falseIsRead/@item.MessageID" class="btn btn-sm btn-secondary">Okunmadı Yap</a>
+                        }
+                        else
+                        {
+                            <a href="/Admin/Message/trueIsRead/@item.MessageID" class="btn btn-sm btn-outline-primary">Okundu Yap</a>
+                        }
+                    </td>
 
+                    <!-- MODAL TETİKLEYİCİ BUTON -->
+                    <td>
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#messageModal"
+                                data-namesurname="@item.NameSurname"
+                                data-email="@item.Email"
+                                data-subject="@item.Subject"
+                                data-detail="@item.MessageDetail"
+                                data-date="@item.SendDate.ToString("dd/MM/yyyy HH:mm")">
+                            Görüntüle
+                        </button>
+                    </td>
+
+                    <!-- SİLME İŞLEMİ ÖNCESİ ONAY PENCERESİ (JavaScript confirm) -->
+                    <td>
+                        <a href="/Admin/Message/DeleteMessage/@item.MessageID"
+                           class="btn btn-sm btn-danger"
+                           onclick="return confirm('Bu mesajı silmek istediğinize emin misiniz?');">
+                            Sil
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
     </table>
 </div>
 
+<!-- BOOTSTRAP MODAL (Mesaj Detayı İçin) -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title" id="messageModalLabel">Mesaj Detayı</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="fw-bold text-muted small">Gönderici Ad Soyad:</label>
+                    <p id="modalNameSurname" class="form-control-plaintext border-bottom pb-1"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="fw-bold text-muted small">E-posta Adresi:</label>
+                    <p id="modalEmail" class="form-control-plaintext border-bottom pb-1"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="fw-bold text-muted small">Konu:</label>
+                    <p id="modalSubject" class="form-control-plaintext border-bottom pb-1"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="fw-bold text-muted small">Gönderim Tarihi:</label>
+                    <p id="modalDate" class="form-control-plaintext border-bottom pb-1"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="fw-bold text-muted small">Mesaj İçeriği (Orijinal):</label>
+                    <div id="modalDetail" class="p-3 bg-light rounded border text-secondary" style="max-height: 150px; overflow-y: auto;"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL İÇERİĞİNİ DOLDURAN JAVASCRIPT KODU -->
+<script>
+    const messageModal = document.getElementById('messageModal');
+    messageModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget; // Modalı açan buton
+
+        // Buton üzerindeki data-* özelliklerinden verileri al
+        const nameSurname = button.getAttribute('data-namesurname');
+        const email = button.getAttribute('data-email');
+        const subject = button.getAttribute('data-subject');
+        const detail = button.getAttribute('data-detail');
+        const date = button.getAttribute('data-date');
+
+        // Modal içindeki elementlere bu verileri yazdır (Orijinal içerik değiştirilemez, sadece okunur)
+        document.getElementById('modalNameSurname').textContent = nameSurname;
+        document.getElementById('modalEmail').textContent = email;
+        document.getElementById('modalSubject').textContent = subject;
+        document.getElementById('modalDate').textContent = date;
+        document.getElementById('modalDetail').textContent = detail;
+    });
+</script>

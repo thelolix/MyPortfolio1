@@ -1,0 +1,79 @@
+﻿@model List<MYAcedemy_Portfolio_Project.Entites.Education>
+
+<!-- Education Section -->
+<section id="education" style="background-color: var(--bg-secondary);">
+    <div class="container">
+        <div class="text-center mb-5 reveal-on-scroll">
+            <span class="section-eyebrow">AKADEMİK YOLCULUĞUM</span>
+            <h2 class="section-title">Eğitim Hayatım</h2>
+            <p class="section-subtitle">Yazılım dünyasına uzanan yolculuğumun akademik temelleri.</p>
+        </div>
+
+        <div class="timeline-container">
+            @{
+                int index = 0;
+            }
+            @foreach (var item in Model)
+            {
+                index++;
+                // Tek sıra numaralarında (Örn: 1. kayıt - Üniversite) kart solda yer alır
+                if (index % 2 != 0)
+                {
+                    <div class="timeline-item row align-items-center g-4 reveal-on-scroll">
+                        <div class="col-lg-6 timeline-left order-2 order-lg-1">
+                            <div class="timeline-content-card">
+                                <span class="badge-year bg-icon-purple mb-2">
+                                    <i class="bi bi-calendar3"></i> @item.Duration
+                                </span>
+                                <h4 class="fs-5 fw-bold mb-1">@item.ScoolTitle</h4>
+                                <div class="text-primary fw-semibold small mb-2">@item.SubTitle</div>
+                                <p class="text-secondary small mb-3">
+                                    @item.Description
+                                </p>
+                                <div>
+                                    <span class="tech-tag">Yönetim Bilişim Sistemleri</span>
+                                    <span class="tech-tag">Veritabanı</span>
+                                    <span class="tech-tag">Backend</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-marker">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <div class="col-lg-6 timeline-right order-1 order-lg-2 d-none d-lg-block">
+                            <div class="text-secondary fst-italic small">İstanbul, Türkiye</div>
+                        </div>
+                    </div>
+                }
+                // Çift sıra numaralarında (Örn: 2. kayıt - Lise) kart sağda yer alır
+                else
+                {
+                    <div class="timeline-item row align-items-center g-4 reveal-on-scroll">
+                        <div class="col-lg-6 timeline-left d-none d-lg-block">
+                            <div class="text-secondary fst-italic small">İstanbul, Türkiye</div>
+                        </div>
+                        <div class="timeline-marker">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <div class="col-lg-6 timeline-right">
+                            <div class="timeline-content-card">
+                                <span class="badge-year bg-icon-mint mb-2">
+                                    <i class="bi bi-calendar3"></i> @item.Duration
+                                </span>
+                                <h4 class="fs-5 fw-bold mb-1">@item.ScoolTitle</h4>
+                                <div class="text-primary fw-semibold small mb-2">@item.SubTitle</div>
+                                <p class="text-secondary small mb-3">
+                                    @item.Description
+                                </p>
+                                <div>
+                                    <span class="tech-tag">Mekatronik</span>
+                                    <span class="tech-tag">Donanım & Sistem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</section>

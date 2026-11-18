@@ -1,0 +1,35 @@
+﻿@model List<MYAcedemy_Portfolio_Project.Entites.Certifika>
+
+<!-- Certificates Section -->
+<section id="certificates" class="py-5" style="background-color: var(--bg-secondary);">
+    <div class="container">
+        <div class="text-center mb-5 reveal-on-scroll">
+            <span class="section-eyebrow">SÜREKLİ GELİŞİM</span>
+            <h2 class="section-title">Sertifikalarım ve Eğitimler</h2>
+            <p class="section-subtitle">Yazılım yolculuğumda kendimi geliştirmek için katıldığım programlar ve aldığım belgeler.</p>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6 reveal-on-scroll">
+                    <div class="project-card card h-100 border-0 shadow-sm">
+                        <img src="@item.CertifikaUrl" class="card-img-top" alt="@item.CertifikaTitle" style="height: 180px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-1 small">
+                                    <i class="bi bi-calendar3"></i> @item.Date
+                                </span>
+                            </div>
+                            <h4 class="fs-5 fw-bold mb-1">@item.CertifikaTitle</h4>
+                            <div class="text-secondary small fw-semibold mb-3">@item.CertifikaSub</div>
+                            <div class="mt-auto pt-3 border-top d-flex align-items-center text-muted small">
+                                <i class="bi bi-patch-check-fill text-success me-2"></i> Resmi Sertifika
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

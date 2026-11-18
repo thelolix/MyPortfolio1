@@ -14,7 +14,7 @@ namespace MYAcedemy_Portfolio_Project.ViewComponents.DefaultViewComponents
         
         public IViewComponentResult Invoke()
         {
-            var values = _context.Experiences.Where(x => x.IsActive == true).ToList();
+            var values = _context.Experiences.ToList();
             return View(values);
         }
     

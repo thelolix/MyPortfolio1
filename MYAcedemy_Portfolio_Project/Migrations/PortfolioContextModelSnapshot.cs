@@ -80,6 +80,35 @@ namespace MYAcedemy_Portfolio_Project.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Certifika", b =>
+                {
+                    b.Property<int>("CertifikaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CertifikaID"));
+
+                    b.Property<string>("CertifikaSub")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CertifikaTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CertifikaUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CertifikaID");
+
+                    b.ToTable("Certifikas");
+                });
+
             modelBuilder.Entity("MYAcedemy_Portfolio_Project.Entites.Contact", b =>
                 {
                     b.Property<int>("ContactID")
@@ -275,6 +304,9 @@ namespace MYAcedemy_Portfolio_Project.Migrations
                     b.Property<string>("GitHubUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Title")
                         .IsRequired()

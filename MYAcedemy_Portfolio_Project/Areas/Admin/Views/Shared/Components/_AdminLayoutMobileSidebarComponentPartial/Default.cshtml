@@ -1,35 +1,339 @@
-﻿    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel" style="background-color: var(--sidebar-bg); width: 280px;">
-        <div class="offcanvas-header border-bottom" style="border-color: var(--sidebar-border) !important;">
-            <div class="d-flex align-items-center gap-2">
-                <div class="brand-mark" style="width: 32px; height: 32px; font-size: 1rem;">P</div>
-                <div>
-                    <div class="fw-bold text-white fs-6 lh-1">Poyraz.</div>
-                    <small class="text-white-50" style="font-size: 0.7rem;">Portfolio Admin</small>
-                </div>
+﻿<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+    <style>
+            #mobileSidebar {
+                background: #1e1e2e;
+                width: 280px;
+                border-right: 1px solid rgba(255,255,255,.06);
+                font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            }
+
+            /* ── HEADER ── */
+            .msb-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 18px;
+                border-bottom: 1px solid rgba(255,255,255,.06);
+            }
+
+            .msb-brand {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+            }
+
+            .msb-brand-avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 11px;
+                background: linear-gradient(135deg, #7c6ff7, #a78bfa);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 17px;
+                font-weight: 700;
+                color: #fff;
+                box-shadow: 0 4px 12px rgba(124,111,247,.4);
+                flex-shrink: 0;
+            }
+
+            .msb-brand-name {
+                font-size: 15px;
+                font-weight: 700;
+                color: #fff;
+                letter-spacing: -.01em;
+                line-height: 1.1;
+            }
+
+            .msb-brand-role {
+                font-size: 11px;
+                color: #6c7086;
+                margin-top: 2px;
+            }
+
+            .msb-close {
+                width: 30px;
+                height: 30px;
+                border-radius: 8px;
+                background: rgba(255,255,255,.07);
+                border: none;
+                color: #6c7086;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background .15s, color .15s;
+                flex-shrink: 0;
+            }
+
+                .msb-close:hover {
+                    background: rgba(255,255,255,.13);
+                    color: #fff;
+                }
+
+            /* ── BODY ── */
+            .msb-body {
+                display: flex;
+                flex-direction: column;
+                height: calc(100% - 81px);
+                overflow: hidden;
+            }
+
+            /* ── NAV SCROLL ── */
+            .msb-nav {
+                flex: 1;
+                overflow-y: auto;
+                padding: 14px 12px;
+                scrollbar-width: none;
+            }
+
+                .msb-nav::-webkit-scrollbar {
+                    display: none;
+                }
+
+            /* ── GROUP LABEL ── */
+            .msb-group {
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                color: #45475a;
+                padding: 0 10px;
+                margin: 18px 0 6px;
+            }
+
+                .msb-group:first-child {
+                    margin-top: 0;
+                }
+
+            /* ── NAV ITEM ── */
+            .msb-item {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+                padding: 10px 12px;
+                border-radius: 10px;
+                color: #cdd6f4;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 2px;
+                border-left: 3px solid transparent;
+                transition: background .18s, color .18s, border-color .18s;
+            }
+
+                .msb-item:hover {
+                    background: rgba(255,255,255,.06);
+                    color: #fff;
+                }
+
+                .msb-item.active {
+                    background: rgba(124,111,247,.18);
+                    color: #9d98f8;
+                    border-left-color: #7c6ff7;
+                    font-weight: 600;
+                }
+
+            /* ── ICON ── */
+            .msb-icon {
+                width: 30px;
+                height: 30px;
+                border-radius: 8px;
+                background: rgba(255,255,255,.05);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                flex-shrink: 0;
+                transition: background .18s;
+            }
+
+            .msb-item:hover .msb-icon,
+            .msb-item.active .msb-icon {
+                background: rgba(124,111,247,.2);
+            }
+
+            /* ── BADGE ── */
+            .msb-badge {
+                margin-left: auto;
+                background: #f59e0b;
+                color: #fff;
+                font-size: 10px;
+                font-weight: 700;
+                padding: 2px 7px;
+                border-radius: 99px;
+                min-width: 20px;
+                text-align: center;
+            }
+
+            /* ── DIVIDER ── */
+            .msb-divider {
+                height: 1px;
+                background: rgba(255,255,255,.06);
+                margin: 10px 0;
+            }
+
+            /* ── BOTTOM USER ── */
+            .msb-footer {
+                border-top: 1px solid rgba(255,255,255,.06);
+                background: #2a2a3d;
+                padding: 14px 16px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .msb-user-avatar {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #6366f1, #8b5cf6);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: 700;
+                flex-shrink: 0;
+            }
+
+            .msb-user-name {
+                font-size: 13px;
+                font-weight: 600;
+                color: #fff;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .msb-user-role {
+                font-size: 11px;
+                color: #6c7086;
+                margin-top: 1px;
+            }
+
+            .msb-logout {
+                margin-left: auto;
+                width: 28px;
+                height: 28px;
+                border-radius: 7px;
+                background: rgba(255,255,255,.07);
+                border: none;
+                color: #6c7086;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 14px;
+                text-decoration: none;
+                flex-shrink: 0;
+                transition: background .15s, color .15s;
+            }
+
+                .msb-logout:hover {
+                    background: rgba(239,68,68,.2);
+                    color: #f87171;
+                }
+    </style>
+
+    <!-- HEADER -->
+    <div class="msb-header">
+        <div class="msb-brand">
+            <div class="msb-brand-avatar">P</div>
+            <div>
+                <div class="msb-brand-name">Mustafa Talha.</div>
+                <div class="msb-brand-role">Portfolio Admin</div>
             </div>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
         </div>
-        <div class="offcanvas-body p-0 d-flex flex-column justify-content-between">
-            <div class="sidebar-nav-scroll p-3">
-                <div class="nav-group-title">Genel</div>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Dashboard"><i class="bi bi-speedometer2"></i> Dashboard</a>
-                <a href="javascript:void(0)" onclick="openPublicPortfolio()" class="sidebar-link"><i class="bi bi-box-arrow-up-right"></i> Portfolyoyu Görüntüle</a>
+        <button class="msb-close" data-bs-dismiss="offcanvas" aria-label="Kapat">✕</button>
+    </div>
 
-                <div class="nav-group-title">İçerik Yönetimi</div>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Hakkımda"><i class="bi bi-person"></i> Hakkımda</a>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Eğitim Hayatım"><i class="bi bi-mortarboard"></i> Eğitim Hayatım</a>
-                <a href="#deneyim-yonetimi" class="sidebar-link active" data-bs-dismiss="offcanvas"><i class="bi bi-briefcase-fill"></i> Deneyimlerim</a>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Yeteneklerim"><i class="bi bi-code-slash"></i> Yeteneklerim</a>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Projelerim"><i class="bi bi-grid-fill"></i> Projelerim</a>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Sertifikalarım"><i class="bi bi-award"></i> Sertifikalarım</a>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Çalışma Yaklaşımım"><i class="bi bi-diagram-3"></i> Çalışma Yaklaşımım</a>
+    <!-- BODY -->
+    <div class="msb-body">
+        <nav class="msb-nav">
 
-                <div class="nav-group-title">İletişim & Sistem</div>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Gelen Mesajlar"><i class="bi bi-envelope"></i> Gelen Mesajlar</a>
-                <a href="#" class="sidebar-link placeholder-link" data-module="Site Ayarları"><i class="bi bi-gear"></i> Site Ayarları</a>
+            <!-- GENEL -->
+            <div class="msb-group">Genel</div>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Dashboard" ? "active" : "")"
+               href="/Admin/Dashboard" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">📊</span> Dashboard
+            </a>
+
+            <a class="msb-item" href="/" target="_blank" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">🌐</span> Portfolyoyu Görüntüle
+            </a>
+
+            <!-- İÇERİK YÖNETİMİ -->
+            <div class="msb-group">İçerik Yönetimi</div>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "About" ? "active" : "")"
+               href="/Admin/About/AboutList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">👤</span> Hakkımda
+            </a>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Education" ? "active" : "")"
+               href="/Admin/Education/EducationList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">🎓</span> Eğitim Hayatım
+            </a>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Experience" ? "active" : "")"
+               href="/Admin/Experience/ExperienceList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">💼</span> Deneyimlerim
+            </a>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Skills" ? "active" : "")"
+               href="/Admin/Skills/SkillList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">🛠</span> Yeteneklerim
+            </a>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Projects" ? "active" : "")"
+               href="/Admin/Projects/ProjectsList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">📁</span> Projelerim
+            </a>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Category" ? "active" : "")"
+               href="/Admin/Category/CategoryList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">🏷</span> Kategoriler
+            </a>
+
+            <!-- İLETİŞİM & SİSTEM -->
+            <div class="msb-group">İletişim & Sistem</div>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Message" ? "active" : "")"
+               href="/Admin/Message/MessageList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">✉</span>
+                <span style="flex:1;">Gelen Mesajlar</span>
+                @if (ViewBag.unreadMessageCount != null && (int)ViewBag.unreadMessageCount > 0)
+                {
+                    <span class="msb-badge">@ViewBag.unreadMessageCount</span>
+                }
+            </a>
+
+            <a class="msb-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "SocialMedia" ? "active" : "")"
+               href="/Admin/SocialMedia/SocialMediaList" data-bs-dismiss="offcanvas">
+                <span class="msb-icon">🔗</span> Sosyal Medya
+            </a>
+
+            <div class="msb-divider"></div>
+
+            <a class="msb-item" href="/Admin/Auth/Logout">
+                <span class="msb-icon">⏻</span>
+                <span style="color:#f87171;">Çıkış Yap</span>
+            </a>
+
+        </nav>
+
+        <!-- FOOTER USER -->
+        <div class="msb-footer">
+            <div class="msb-user-avatar">MY</div>
+            <div style="overflow:hidden; min-width:0;">
+                <div class="msb-user-name">Mustafa Talha Yılmaz</div>
+                <div class="msb-user-role">Yönetici</div>
             </div>
-            <div class="p-3 text-center border-top" style="border-color: var(--sidebar-border) !important;">
-                <small class="text-white-50" style="font-size: 0.7rem;">Portfolio CMS v1.0</small>
-            </div>
+            <a class="msb-logout" href="/Admin/Auth/Logout" title="Çıkış">⏻</a>
         </div>
     </div>
+
+</div>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MYAcedemy_Portfolio_Project.Context;
+using MYAcedemy_Portfolio_Project.Entites;
 
 namespace MYAcedemy_Portfolio_Project.ViewComponents.DefaultViewComponents
 {
@@ -14,11 +15,12 @@ namespace MYAcedemy_Portfolio_Project.ViewComponents.DefaultViewComponents
     
         public IViewComponentResult Invoke()
         {
-            var values = _context.Educations.Where(x => x.IsActive == true).ToList();
+            var values = _context.Educations.ToList();
             return View(values);
         }
-    
-    
-    
+
+       
+
+
     }
 }

@@ -16,12 +16,26 @@ namespace MYAcedemy_Portfolio_Project.Areas.Admin.Controllers
 
 
 
-        public IActionResult MessageList()
+
+        public IActionResult MessageList(string search)
         {
             var value = _context.Messages.OrderByDescending(x => x.SendDate).ToList();
+            
+            if (search != null)
+            {
+                value = value.Where(x => x.NameSurname.Contains(search) || x.Subject.Contains(search)).ToList();
+                    
+            }
+
+            //Okunmamış msjlar sayısı
+            var value2 = _context.Messages.Where(x => x.IsRead == false).Count();
+            ViewBag.unreadCount = value2;
+
+
             return View(value);
         }
 
+        [HttpGet]
         public IActionResult CreateMessage()
         {
             return View();
@@ -56,26 +70,24 @@ namespace MYAcedemy_Portfolio_Project.Areas.Admin.Controllers
             
         }
 
-
-
-        [HttpPost]
-        public IActionResult SendMessage(Message message)
+        public IActionResult trueIsRead(int id)
         {
-            if (ModelState.IsValid)
-            {
-                message.SendDate = DateTime.Now;
-                message.IsRead = false;
-
-                _context.Messages.Add(message);
-                _context.SaveChanges();
-
-                TempData["SuccessMessage"] = "Mesajınız başarıyla iletildi! Teşekkür ederiz.";
-                return RedirectToAction("");
-            }
-
-            TempData["ErrorMessage"] = "Lütfen formu eksiksiz doldurun.";
-            return RedirectToAction("Index", "Default");
+            var value = _context.Messages.Find(id);
+            value.IsRead = true;
+            _context.SaveChanges();
+            return RedirectToAction("MessageList");
         }
+
+        public IActionResult falseIsRead(int id)
+        {
+            var value = _context.Messages.Find(id);
+            value.IsRead = false;
+            _context.SaveChanges();
+            return RedirectToAction("MessageList");
+        }
+
+
+
 
     }
 }

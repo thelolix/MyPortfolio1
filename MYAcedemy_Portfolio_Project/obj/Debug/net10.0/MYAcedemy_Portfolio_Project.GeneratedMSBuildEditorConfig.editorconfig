@@ -123,12 +123,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0TW9iaWxlU2lkZWJhckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Shared/Components/_AdminLayoutStyleComponentPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U3R5bGVDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Shared/Components/_AdminLayoutSidebarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2lkZWJhckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Shared/Components/_AminLayoutSidebarComponentPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FtaW5MYXlvdXRTaWRlYmFyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Shared/Components/_AdminLayoutStyleComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U3R5bGVDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Areas/Admin/Views/Skills/SkillCreate.cshtml]
@@ -171,8 +171,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultAboutComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRBYm91dENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultCertifikaComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRDZXJ0aWZpa2FDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultContactComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRDb250YWN0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultEducationComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRFZHVjYXRpb25Db21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultExperienceComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRFeHBlcmllbmNlQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultFooterComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRGb290ZXJDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultHeadComponentPartial/Default.cshtml]
@@ -189,6 +209,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultProjectComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRQcm9qZWN0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0RlZmF1bHRTY3JpcHRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/musta/source/repos/MYAcedemy_Portfolio_Project/MYAcedemy_Portfolio_Project/Views/Shared/Components/_DefaultStyleComponentPartial/Default.cshtml]

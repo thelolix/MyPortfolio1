@@ -27,6 +27,7 @@ namespace MYAcedemy_Portfolio_Project.Context
         public DbSet<Project> Projects { get; set; }
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
+        public DbSet<Certifika> Certifikas { get; set; }
 
 
     }
